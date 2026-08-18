@@ -14,8 +14,7 @@ class CMSRelationshipService:
         if not code:
             return ""
         normalized = code.strip().upper()
-        if code_type.lower() == "icd10":
-            normalized = normalized.replace(".", "")
+        # Keep dots, as CMS data retains the dots (e.g. 'M17.10')
         return normalized
 
     async def get_icd_coverage(self, normalized_icd: str) -> Dict[str, List[Dict[str, Any]]]:

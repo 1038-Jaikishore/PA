@@ -1,0 +1,268 @@
+{
+  "lcd_article_relationships": {
+    "_id": "6a83e5f5a35ae52cca034aa0",
+    "lcd_id_numeric": "OXYGEN",
+    "article_id_numeric": "OXYGEN"
+  },
+  "lcd_ncd_relationships": {
+    "_id": "6a83e5f5a35ae52cca034a9e",
+    "lcd_id_numeric": "OXYGEN",
+    "r_ncd_id": "240.2"
+  },
+  "lcd_jurisdictions": {
+    "_id": "6a83e5f5a35ae52cca034ab2",
+    "lcd_id_numeric": "OXYGEN",
+    "state_name": "Texas",
+    "contractor_id": "MOCK-MAC-TX"
+  },
+  "article_hcpcs": {
+    "_id": "6a83e5f5a35ae52cca034a8c",
+    "article_id_numeric": "52514",
+    "hcpcs_code": {
+      "canonical_value": "E0424"
+    }
+  },
+  "patient_conditions": {
+    "_id": "6a83e884feb3222b2c6aec15",
+    "patient_id": "100456",
+    "diagnosis_code": "Chronic Obstructive Pulmonary Disease (COPD)",
+    "diagnosis": "Chronic Obstructive Pulmonary Disease (COPD)"
+  },
+  "diagnostic_results": {
+    "_id": "6a83e884feb3222b2c6aec1a",
+    "patient_id": "100456",
+    "test_name": "Arterial Blood Gas (ABG)",
+    "value": "PO2 of 52 mm Hg",
+    "unit": ""
+  },
+  "patients": {
+    "_id": "6a83ff885b33796c01cd790e",
+    "patient_id": "PT_DOC_73AE55",
+    "first_name": "John",
+    "last_name": "Doe",
+    "dob": "1970-05-15",
+    "gender": "male",
+    "insurance_plan": "Medicare Advantage",
+    "member_id": "MBR_PT_DOC_73AE55"
+  },
+  "audit_events": {
+    "_id": "6a83ff845b33796c01cd7908",
+    "event_id": "EVT-SYSTEM-0596efe9",
+    "authorization_id": "SYSTEM",
+    "event_type": "DOCUMENT_UPLOADED",
+    "actor_type": "SYSTEM",
+    "actor_id": "system",
+    "timestamp": "2026-08-18T06:45:24.160846+00:00",
+    "related_object_id": null,
+    "metadata": {
+      "document_id": "DOC-9FDB6946",
+      "filename": "EHR_Approve_Oxygen.pdf"
+    }
+  },
+  "patient_medications": {
+    "_id": "6a83e884feb3222b2c6aec17",
+    "patient_id": "100456",
+    "medication_name": "Inhalers"
+  },
+  "authorization_requests": {
+    "_id": "6a83e631389997e3cf28a062",
+    "request_id": "AUTH-4181E842",
+    "patient_id": "PAT-9131F209",
+    "provider_id": "AUTO_EXTRACTED",
+    "requested_procedure_code": {
+      "source_value": "UNKNOWN",
+      "canonical_value": "UNKNOWN",
+      "display_value": "UNKNOWN"
+    },
+    "diagnosis_code": [],
+    "request_date": "2026-08-18T04:57:21.325105+00:00",
+    "status": "Pending",
+    "source": "frontend_upload",
+    "inserted_at": "2026-08-18T04:57:21.325114+00:00"
+  },
+  "vital_signs": {
+    "_id": "6a83e884feb3222b2c6aec1c",
+    "patient_id": "100456",
+    "vital_type": "chronic severe hypoxemia",
+    "value": ""
+  },
+  "patient_documents": {
+    "_id": "6a83ff845b33796c01cd7907",
+    "document_id": "DOC-9FDB6946",
+    "authorization_id": "AUTH-DOC-8B1CEF",
+    "patient_id": "PT_DOC_73AE55",
+    "filename": "EHR_Approve_Oxygen.pdf",
+    "file_type": "pdf",
+    "mime_type": "application/pdf",
+    "upload_status": "CONFIRMED",
+    "extraction_status": "COMPLETED",
+    "page_count": 1,
+    "created_at": "2026-08-18T06:45:24.123129",
+    "source_type": "UPLOADED_DOCUMENT",
+    "stored_filename": "DOC-9FDB6946_EHR_Approve_Oxygen.pdf",
+    "warnings": []
+  },
+  "lcd_hcpcs": {
+    "_id": "6a83e5f5a35ae52cca034a8a",
+    "lcd_id_numeric": "OXYGEN",
+    "hcpcs_code": {
+      "canonical_value": "E0424"
+    }
+  },
+  "patient_procedures": {
+    "_id": "6a83e9e4feb3222b2c6aec27",
+    "patient_id": "PAT-OXYGEN-001",
+    "procedure_code": "oxygen therapy",
+    "procedure": "oxygen therapy"
+  },
+  "evaluations": {
+    "_id": "6a83ff885b33796c01cd7912",
+    "evaluation_id": "EVAL-NA-0C719A",
+    "authorization_id": "AUTH-DOC-8B1CEF",
+    "requirements": [],
+    "requirement_evaluations": [],
+    "coding_validations": [],
+    "administrative_validations": [],
+    "missing_information": [
+      "No active CMS policy coverage rules govern CPT code."
+    ],
+    "warnings": [
+      "NO_POLICY_FOUND"
+    ],
+    "created_at": "2026-08-18T06:45:28.262168+00:00"
+  },
+  "document_extractions": {
+    "_id": "6a83ff845b33796c01cd790a",
+    "document_id": "DOC-9FDB6946",
+    "version": 2,
+    "status": "CONFIRMED",
+    "patient": {
+      "name": "John Doe",
+      "dob": "1970-05-15",
+      "age": 56,
+      "gender": "male"
+    },
+    "requested_service": {
+      "code": "97110",
+      "code_system": "CPT",
+      "description": "Therapeutic exercises"
+    },
+    "diagnoses": [
+      {
+        "code": "M17.11",
+        "code_system": "ICD-10-CM",
+        "description": "Osteoarthritis of knee",
+        "code_status": "DOCUMENTED"
+      }
+    ],
+    "prior_treatments": [
+      {
+        "treatment_type": "physical_therapy",
+        "name": "Treatment B",
+        "duration": "1 month",
+        "status": null,
+        "treatment_response": null,
+        "failed": true
+      }
+    ],
+    "diagnostic_results": [],
+    "clinical_indication": "Knee pain and stiffness",
+    "provider_justification": "referred for therapy services by a physician",
+    "provider": {
+      "name": "Dr. Smith",
+      "provider_type": "MD",
+      "facility": "Denver Medical Center",
+      "npi": "1234567890"
+    },
+    "geography": {
+      "state": "CO",
+      "zip": "80202"
+    },
+    "missing_fields": [],
+    "provenance_records": [
+      {
+        "fact_id": "FACT-b8a90ad2",
+        "fact_type": "requested_procedure_code",
+        "value": "97110",
+        "document_id": "DOC-9FDB6946",
+        "page_number": 1,
+        "source_text": "Requested therapy: 97110",
+        "extraction_method": "LLM",
+        "extractor_model": "mock_extractor",
+        "confidence": null
+      },
+      {
+        "fact_id": "FACT-3042a64d",
+        "fact_type": "diagnosis_code",
+        "value": "M17.11",
+        "document_id": "DOC-9FDB6946",
+        "page_number": 1,
+        "source_text": "Diagnosis: Osteoarthritis right knee",
+        "extraction_method": "LLM",
+        "extractor_model": "mock_extractor",
+        "confidence": null
+      }
+    ],
+    "edit_history": [],
+    "metadata": {
+      "extractor_provider": "MockLLMProvider",
+      "extractor_model": "rule_engine",
+      "extraction_prompt_version": "clinical_document_extraction_v1"
+    }
+  },
+  "decisions": {
+    "_id": "6a83ff885b33796c01cd7913",
+    "decision_id": "DEC-NA-627EF5",
+    "evaluation_id": "EVAL-NA-0C719A",
+    "authorization_id": "AUTH-DOC-8B1CEF",
+    "recommended_disposition": "DECISION_SUPPORT_UNAVAILABLE",
+    "decision_certainty": "HIGH",
+    "requires_human_review": true,
+    "reason_codes": [
+      "PA_POLICY_UNAVAILABLE"
+    ],
+    "decision_factors": [],
+    "missing_information": [],
+    "rule_version": "1.0.0",
+    "created_at": "2026-08-18T06:45:28.285958+00:00"
+  },
+  "articles": {
+    "_id": "6a83e5f4a35ae52cca034a80",
+    "article_id": {
+      "canonical_value": "OXYGEN",
+      "display_value": "A-OXYGEN"
+    },
+    "article_type": "Billing",
+    "article_version": "1",
+    "effective_date": "2000-01-01",
+    "title": "Billing: Oxygen"
+  },
+  "policy_chunks": {
+    "_id": "6a83e5f5a35ae52cca034abc",
+    "document_id": "240.2",
+    "document_type": "NCD",
+    "section": "indications",
+    "text": "Stationary oxygen is covered for patients with severe hypoxemia documented by an ABG test."
+  },
+  "lcds": {
+    "_id": "6a83e5f4a35ae52cca034a76",
+    "lcd_id": {
+      "canonical_value": "OXYGEN",
+      "display_value": "L-OXYGEN"
+    },
+    "effective_date": "2000-01-01",
+    "lcd_version": "1",
+    "status": "Active",
+    "title": "Oxygen and Oxygen Equipment"
+  },
+  "ncds": {
+    "_id": "6a83e5f4a35ae52cca034a6c",
+    "ncd_id": {
+      "canonical_value": "240.2",
+      "display_value": "240.2"
+    },
+    "effective_date": "2000-01-01",
+    "status": "Active",
+    "title": "Home Use of Oxygen"
+  }
+}

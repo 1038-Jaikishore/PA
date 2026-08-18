@@ -5,6 +5,7 @@ from app.api.health import router as health_router
 from app.api.datasets import router as datasets_router
 from app.api.patients import router as patients_router
 from app.api.policies import router as policies_router
+from app.api.cases import router as cases_router
 from app.db.mongodb import connect_to_mongo, close_mongo_connection
 
 @asynccontextmanager
@@ -27,3 +28,4 @@ app.include_router(health_router, prefix="/api")
 app.include_router(datasets_router, prefix="/api/datasets")
 app.include_router(patients_router, prefix="/api/patients")
 app.include_router(policies_router)
+app.include_router(cases_router)

@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 import { Dashboard } from './pages/Dashboard';
 import { DataStatus } from './pages/DataStatus';
 import { SyntheaCases } from './pages/SyntheaCases';
+import { PriorAuthCases } from './pages/PriorAuthCases';
+import { PriorAuthCaseView } from './pages/PriorAuthCaseView';
 import { UploadCase } from './pages/UploadCase';
 import { PolicyExplorer } from './pages/PolicyExplorer';
 import { Evaluation } from './pages/Evaluation';
@@ -17,6 +19,7 @@ function App() {
             <NavLink to="/">Dashboard</NavLink>
             <NavLink to="/data-status">Data Status</NavLink>
             <NavLink to="/synthea-cases">Synthea Cases</NavLink>
+            <NavLink to="/prior-auth-cases">Prior Auth Cases</NavLink>
             <NavLink to="/upload">Upload Patient</NavLink>
             <NavLink to="/policy-explorer">Policy Explorer</NavLink>
             <NavLink to="/evaluation">Evaluation</NavLink>
@@ -28,6 +31,8 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/data-status" element={<DataStatus />} />
             <Route path="/synthea-cases" element={<SyntheaCases />} />
+            <Route path="/prior-auth-cases" element={<PriorAuthCases />} />
+            <Route path="/prior-auth-cases/:caseId" element={<PriorAuthCaseView />} />
             <Route path="/upload" element={<UploadCase />} />
             <Route path="/policy-explorer" element={<PolicyExplorer />} />
             <Route path="/evaluation" element={<Evaluation />} />

@@ -50,6 +50,7 @@ export const Dashboard = () => {
             <li><strong>Aligned Demo Import:</strong> {getStatusText(dbStats?.aligned_collections_populated, 2)}</li>
             <li><strong>Patient Graph:</strong> <span style={{ color: dbStats?.synthea_collections_populated === 21 ? '#10b981' : '#9ca3af' }}>{dbStats?.synthea_collections_populated === 21 ? '● Ready' : '○ Not Started'}</span></li>
             <li><strong>CMS Policy Engine:</strong> <span style={{ color: dbStats?.cms_collections_populated === 9 ? '#10b981' : '#9ca3af' }}>{dbStats?.cms_collections_populated === 9 ? '● Ready' : '○ Not Started'}</span></li>
+            <li><strong>Prior Auth Cases:</strong> <span style={{ color: dbStats?.aligned_collections_populated === 2 ? '#10b981' : '#9ca3af' }}>{dbStats?.aligned_collections_populated === 2 ? '● Ready' : '○ Not Started'}</span></li>
             <li><strong>Policy RAG:</strong> <span style={{ color: '#9ca3af' }}>○ Not Started</span></li>
             <li><strong>Evidence Matching:</strong> <span style={{ color: '#9ca3af' }}>○ Not Started</span></li>
             <li><strong>Triage:</strong> <span style={{ color: '#9ca3af' }}>○ Not Started</span></li>
