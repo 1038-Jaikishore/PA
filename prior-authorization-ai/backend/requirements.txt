@@ -3,3 +3,6 @@ uvicorn
 pydantic
 pandas
 pytest
+motor
+python-dotenv
+

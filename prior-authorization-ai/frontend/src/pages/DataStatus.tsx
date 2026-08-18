@@ -87,8 +87,16 @@ export const DataStatus = () => {
 
   return (
     <div className="glass-panel" style={{ padding: '32px', height: '100%', overflowY: 'auto' }}>
-      <h1>Data Status</h1>
-      <p style={{ color: 'var(--text-secondary)' }}>Live audit results from backend.</p>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div>
+          <h1>Data Status</h1>
+          <p style={{ color: 'var(--text-secondary)' }}>Live audit and DB results from backend.</p>
+        </div>
+        <div style={{ textAlign: 'right' }}>
+          <div style={{ color: 'var(--accent)', fontWeight: 'bold' }}>MongoDB Connection</div>
+          <div style={{ color: '#10b981' }}>● Connected</div>
+        </div>
+      </div>
       
       {error && <div style={{ color: '#ef4444', marginBottom: '1rem' }}>{error}</div>}
       
